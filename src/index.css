@@ -1,13 +1,92 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.navbar{
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  padding: 8px 50px;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+a{
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.delete{
+  cursor: pointer;
+  color: red;
+}
+.view{
+  cursor: pointer;
+}
+table {
+  border-collapse: collapse;
+  padding: 1rem;
+  width: 100%;
+}
+  .table-head {
+    background-color: #f7f7f7;
+  }
+
+  th,
+  td {
+    padding: 10px;
+    text-align: start;
+    border-radius: 0.5rem !important;
+    border: 1.5px solid #f1f1f1;
+  }
+
+  tr:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+.table-row{
+  display: flex;
+  align-items: center;
+  gap: 30%;
+}
+
+input{
+  border-color: #fff;
+    outline: none;
+    border: none;
+    background: none;
+    /* width: 30rem; */
+    font-size: 16px;
+    opacity: 0.9;
+    padding: 8px 16px;
+    color: black;
+    border: 1px solid rgb(98 84 243);
+}
+.form-control{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.btn{
+font-weight: 500;
+border: 0.1rem solid rgb(98 84 243);
+color:rgb(98 84 243);
+padding: 7px 20px;
+font-size: 16px;
+background: none;
+text-transform: capitalize;
+cursor: pointer;
+transition: all 0.2s;
+}
+.btn:hover{
+background-color: rgb(98 84 243);
+color: #fff;
+      transform: scale(0.9);
 }
